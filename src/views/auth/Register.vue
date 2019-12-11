@@ -83,7 +83,9 @@
             password: this.password,
             avatar: `https://api.adorable.io/avatars/200/${this.username}.png`
           }
-          const localUser = ls.getItem('user')
+          const localUser = this.$store.state.user
+          ls.setItem('user',user)
+          this.$store.dispatch('login',user)
 
           if (localUser) {
             if (localUser.name === user.name) {
