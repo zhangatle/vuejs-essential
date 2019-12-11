@@ -3,7 +3,7 @@
     <div class="container">
       <div class="navbar-header">
         <a href="/" class="navbar-brand">
-          <span class="title">{{logo.title}}</span>
+          <span class="title">{{ logo.title }}</span>
           <img :src="logo.src" :alt="logo.title">
         </a>
       </div>
@@ -17,13 +17,13 @@
         data(){
           return {
             logo: {
-              src: `${this.uploadsUrl}sites/ByvFbNlQYVwhvTyBgLdqitchoacDNznN.jpg`,
+              src: `${this.uploadsUrl}/uploads/communities/hIZjRRdF8oVYZy69XJnT.png!/both/44x44`,
               title: 'VuejsCaff'
             }
           }
         },
       beforeCreate() {
-          this.uploadsUrl = 'https:./cdn.learnku.com/uploads/'
+          this.uploadsUrl = 'https://cdn.learnku.com/'
       }
     }
 </script>
